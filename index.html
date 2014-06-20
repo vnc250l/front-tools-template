@@ -9,17 +9,23 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="body_header">
-    <div class="inner_header">
-      <div class="site_title">ZIGExN front-tools</div>
-      <div class="navbar">
-        <nav>
-          <ul>
-            <li><a href="" class="001 active">first</a></li>
-            <li><a href="" class="002">javascripts</a></li>
-            <li><a href="" class="003">stylesheets</a></li>
-          </ul>
-        </nav>
+  <div class="navbar navbar-static-top">
+    <div class="body_header">
+      <div class="navbar-inverse">
+        <div class="container">
+          <div class="inner_header">
+            <div class="site_title navbar-brand">ZIGExN front-tools</div>
+            <div class="collapse navbar-collapse">
+              <nav>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="" class="001">first</a></li>
+                  <li><a href="" class="002">javascripts</a></li>
+                  <li><a href="" class="003">stylesheets</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -83,7 +89,48 @@
       <blockquote>
         <p>たったこれだけです。SASSの場合、出力先のCSSファイル名も指定しなきゃいけなかったけど、Compassは最初に設定しているので、必要ありません。</p>
       </blockquote>
+<pre>
+$ vi ~/.bash_profile
 
+#PATHを通すおまじない
+export PATH = "$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+:wq
+
+#bashの設定ファイルを再読み込みするおまじない
+$ source ~/.bash_profile
+</pre>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
   </div>
   <div class="body_footer">
