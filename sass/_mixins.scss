@@ -1,3 +1,6 @@
+// prefix
+$prefixList: -webkit-, -moz-, -ms-, -o-, null;
+
 @mixin gradient($startColor: #555, $endColor: #333) {
     @include filter-gradient($startColor, $endColor);
     @include background-image(linear-gradient($startColor, $endColor));

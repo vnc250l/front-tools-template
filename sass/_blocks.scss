@@ -18,7 +18,7 @@
 .blocks-6 > li {
 	height: auto;
 	float: left;
-	margin-bottom: $baseLine/$em;
+	margin-bottom: $baseLineInEms;
 	margin-left: $gridGutterWidth/($gridWidth/100)*1%;
 	@include box-sizing(border-box);
 }
