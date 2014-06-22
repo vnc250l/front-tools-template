@@ -17,7 +17,8 @@ $gridGutterWidth: 30;
   $baseFontSize: 14;
 $baseLineHeight: 1.6;
       $baseLine: $baseFontSize * $baseLineHeight;
- $baseLineInEms: $baseLine / $em;
+            $em: $baseFontSize * 1em; // Util outputting ems, e.g. 14 / $em
+ $baseLineInEms: ($baseLine / $baseFontSize) + em;
 
 // Heading
 $h1FontSize: $baseFontSize + 22px; // 36px
@@ -55,5 +56,3 @@ $colorLinkHover: $colorRed;
 // Forms
 $fieldsBottom: 1.6em;
 
-// Util
-$em: $baseFontSize * 1em; // outputting ems, e.g. 14 / $em

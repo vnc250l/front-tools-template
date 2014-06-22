@@ -3,7 +3,7 @@
 *,
 *:before,
 *:after {
-  $box-sizing(border-box);
+  $box-sizing:(border-box);
 }
 html {
                font-family: sans-serif;
@@ -154,7 +154,7 @@ table {
 caption,
 th,
 td {
-  t    ext-align: left;
+      text-align: left;
   vertical-align: top;
      font-weight: normal;
 }

@@ -31,7 +31,6 @@ $support-opera  : true;
 
 // opacity
 @mixin opacity($opacity: 100) {
-        filter: e(%("alpha(opacity=%d)", $opacity));
   -moz-opacity: $opacity / 100;
        opacity: $opacity / 100;
 }
@@ -208,12 +207,12 @@ $black-90: darken(#fff, 90%);
   cursor: pointer;
   color: rgba($r, $g, $b, 1);
   text-decoration: none;
-  .opacity(50);
+  @include opacity(50);
   &:before {
     content: '\00D7';
   }
   &:hover {
-    .opacity(100);
+    @include opacity(100);
   }
 }
 
