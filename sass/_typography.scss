@@ -72,7 +72,7 @@ h2.subheading,
 h3.subheading,
 h4.subheading,
 h5.subheading {
-  font-weight: 300;
+  font-weight: bold;
 }
 h1.subheading {
   font-size: $h1SubheadingFontSize;
@@ -94,7 +94,7 @@ h5.subheading {
 -----------------------------------------------------------------------------*/
 .lead {
   font-size: $leadFontSize;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.4em;
   margin-bottom: .75em;
 }
@@ -141,7 +141,7 @@ address {
   font-style: normal;
 }
 dl dt {
-  font-weight: 500;
+  font-weight: bold;
 }
 dd {
   margin-left: 1em;
@@ -152,7 +152,7 @@ blockquote {
   position: relative;
   padding-left: $baseLineInEms;
   margin-left: 0;
-  border-left: 2px solid #dbdada;
+  border-left: 3px solid #dbdada;
   & p {
     margin-bottom: .5em;
   }
