@@ -1,9 +1,9 @@
 /* =Typography
 -----------------------------------------------------------------------------*/
 body {
-   background: $backgroundBody;
-        color: $colorBody;
-    font-size: $baseFontSize + 0px;
+  background: $backgroundBody;
+  color: $colorBody;
+  font-size: $baseFontSize + 0px;
   line-height: $baseLineInEms;
   font-family: $baseFontFamily;
 }
@@ -14,16 +14,16 @@ a {
     color: $colorLinkHover;
   }
 }
-
+.title,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-     font-family: $headingsFontFamily;
-     font-weight: bold;
-           color: $colorHeadings;
+  font-family: $headingsFontFamily;
+  font-weight: bold;
+  color: $colorHeadings;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -47,16 +47,17 @@ h4 {
   margin-bottom: .333em;
 }
 h5 {
-  font-size: $h5FontSize ;
+  font-size: $h5FontSize;
   line-height: $baseLineInEms;
   margin-bottom: .25em;
 }
 h6 {
   font-size: $h6FontSize;
+  text-transform: uppercase;
   line-height: $baseLineInEms;
   margin-bottom: .25em;
-  text-transform: uppercase;
 }
+
 /* =Subheading
 -----------------------------------------------------------------------------*/
 hgroup h1:first-child,
@@ -321,170 +322,3 @@ table caption {
   color: #777;
   font-size: $smallFontSize;
 }
-
-
-
-
-// p,
-// ul,
-// ol,
-// dl,
-// dd,
-// dt,
-// blockquote,
-// td,
-// th {
-//   line-height: $baseLine/$em;
-// }
-// ul,
-// ol,
-// ul ul,
-// ol ol,
-// ul ol,
-// ol ul {
-//   margin: 0 0 0 $listsLeft;
-// }
-// ol ol li {
-//   list-style-type: lower-alpha;
-// }
-// ol ol ol li {
-//   list-style-type: lower-roman;
-// }
-// p,
-// ul,
-// ol,
-// dl,
-// blockquote,
-// hr,
-// pre,
-// table,
-// form,
-// fieldset,
-// figure {
-//   margin-bottom: $baseLine/$em;
-// }
-// dl dt {
-//   font-weight: bold;
-// }
-// dd {
-//   margin-left: $listsLeft / 2;
-// }
-// blockquote {
-//   margin-bottom: $baseLine/$em;
-//   position: relative;
-//   color: $colorGray;
-//   padding-left: $baseLine/$em;
-//   margin-left: $baseLine/$em;
-//   border-left: 1px solid #ddd;
-// }
-
-// blockquote small,
-// cite {
-//   color: $colorGrayLight;
-//   font-style: normal;
-// }
-// blockquote p {
-//   margin-bottom: .5em;
-// }
-// small,
-// blockquote cite {
-//   font-size: $smallFontSize;
-//   line-height: 1;
-// }
-// blockquote .pull-right,
-// .units-row blockquote .pull-right {
-//   float: none;
-//   text-align: right;
-//   display: block;
-// }
-// address {
-//   font-style: italic;
-// }
-// del {
-//   text-decoration: line-through;
-// }
-// abbr[title],
-// dfn[title] {
-//   border-bottom: 1px dotted #000;
-//   cursor: help;
-// }
-// strong,
-// b {
-//   font-weight: bold;
-// }
-// em,
-// i {
-//   font-style: italic;
-// }
-// sub,
-// sup {
-//   font-size: $superSmallFontSize;
-//   line-height: 0;
-//   position: relative;
-// }
-// sup {
-//   top: -0.5em;
-// }
-// sub {
-//   bottom: -0.25em;
-// }
-// figcaption {
-//   font-size: $smallFontSize;
-//   font-style: italic;
-// }
-// ins,
-// mark {
-//   background-color: $markBackgroundColor;
-//   color: $colorBlack;
-//   text-decoration: none;
-// }
-// pre,
-// code,
-// kbd,
-// samp {
-//   font-size: 90%;
-//   font-family: $codeFontFamily;
-// }
-// pre {
-//   font-size: 90%;
-//   color: #444;
-//   background: $codeBackgroundColor;
-//   padding: .85em;
-//   overflow: auto;
-// }
-// code {
-//   padding: 2px 3px;
-//   display: inline-block;
-//   line-height: 1;
-//   background: $codeBackgroundColor;
-//   border: 1px solid #ddd;
-// }
-// kbd {
-//   padding: 2px 6px 1px 6px;
-//   line-height: 1;
-//   @include inline-block;
-//   border-radius: .3em;
-//   @include box-shadow(0 2px 0 rgba(0, 0, 0, 0.2),0 0 0 1px white inset);
-//   background-color: #fafafa;
-//   border-color: #ccc #ccc white;
-//   border-style: solid solid none;
-//   border-width: 1px 1px medium;
-//   color: #444;
-//   font-weight: normal;
-//   white-space: nowrap;
-// }
-// input[type="text"],
-// input[type="password"],
-// input[type="email"],
-// textarea {
-//   font-size: .95em;
-// }
-// fieldset {
-//   padding: $baseLine/$em;
-//   margin-bottom: $baseLine/$em;
-//   border: $fieldsetBorder;
-// }
-// legend {
-//   font-weight: bold;
-//   padding: 0 1em;
-// }

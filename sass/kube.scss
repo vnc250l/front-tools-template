@@ -1,34 +1,20 @@
-/*
-	Kube Professional CSS-framework Version 2.0.0
-
-	Copyright (c) 2013, Imperavi Inc.
-
-	http://imperavi.com/kube/
-*/
 @import "compass";
+
 @import "mixins";
 @import "variables";
-@import "reset";
-@import "typo";
+
+@import "normalize";
+@import "typography";
+
 @import "grid";
 @import "blocks";
-@import "navs";
+
+@import "navigation";
+
 @import "tables";
 @import "forms";
+
 @import "buttons";
+
 @import "helpers";
-@import "code";
-
-// @import "lists";
-// @import "colors";
-// @import "labels";
-// @import "images";
-// @import "messages";
-
-
-// @import "responsive-utils";
-// @import "responsive-media";
-// @import "responsive-grid";
-// @import "responsive-blocks";
-// @import "responsive-navs";
-// @import "responsive-forms";
+@import "prettyprint";
