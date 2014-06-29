@@ -1,7 +1,71 @@
 @import "kube";
 
+// base typography for japanese
+body{font-family: Arial, "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;}
+
+
+// colors
+ $colorGraydark: #404040;
+$colorGraysmoke: #737373;
+$colorGraywhite: #f0f0f0;
+
+
+
+// layout
+.container{
+     margin: 0 auto;
+  max-width: 980px;
+  min-width: 320px;
+}
 // header
 
+.body_header{
+  background: $colorBlack;
+       color: $colorGraywhite;
+    overflow: hidden;
+  a{
+              color: $colorGraywhite;
+    text-decoration: none;
+  }
+  .site_title{
+        display: inline-block;
+    margin-left: .5em;
+    padding-top: .5em;
+      font-size: 2em;
+    font-weight: bold;
+  }
+  .navigations{
+    @include inline-block;
+    float: right;
+    ul{
+      margin-bottom: 0;
+    }
+    li{
+      @include inline-block;
+      margin-left: -4px;
+       list-style: none;
+      a{
+        display: block;
+        padding: 1em 1.5em;
+      }
+      a:hover,
+      a.active{
+        background: $colorGraydark;
+      }
+    }
+
+  }
+}
 // main
+.main{}
+// markdown-contents
+.markdouwn_contents{}
 // footer
-// markdown-document
+.body_footer{
+  p{
+    margin-bottom: 0;
+          padding: 1em;
+       border-top: 1px solid $colorGraywhite;
+       text-align: center;
+  }
+}
