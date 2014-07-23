@@ -2153,6 +2153,15 @@ body {
   font-family: Arial, "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
 }
 
+code {
+  border-radius: 3px;
+}
+
+em {
+  background: #fddc43;
+  font-style: normal;
+}
+
 .container {
   margin: 0 auto;
   max-width: 980px;
@@ -2161,11 +2170,11 @@ body {
 
 .body_header {
   background: #0f0f0f;
-  color: #f0f0f0;
+  color: #e0e0e0;
   overflow: hidden;
 }
 .body_header a {
-  color: #f0f0f0;
+  color: #e0e0e0;
   text-decoration: none;
 }
 .body_header .site_title {
@@ -2206,9 +2215,32 @@ body {
   background: #404040;
 }
 
+.top_page {
+  margin: 2em 0 3em;
+}
+
+.docs_container .docs_header {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+.docs_container .docs_title {
+  border-bottom: 1px #f0f0f0 solid;
+}
+.docs_container .datetitme {
+  margin: 0;
+  text-align: right;
+}
+.docs_container .datetitme dt, .docs_container .datetitme dd {
+  display: inline;
+}
+.docs_container .docs_body pre {
+  border-radius: 6px;
+  border: 1px #e0e0e0 solid;
+}
+
 .body_footer p {
   margin-bottom: 0;
   padding: 1em;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid #e0e0e0;
   text-align: center;
 }
