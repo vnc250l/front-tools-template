@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robot" content="index,forrow">
+  <meta name="discription" content="zigexn front tools documents">
+  <title>zigexn front-tools</title>
+  <!-- google code preffity -->
+  <link href="js/google-code-prettify/src/prettify.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="js/google-code-prettify/src/prettify.js"></script>
+  <!-- kube style -->
+  <link rel="stylesheet" href="stylesheets/master.css">
+  <!-- jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body onload="prettyPrint()">
+  <div class="body_header">
+    <div class="container">
+      <div class="site_title">ZIGExN front-tools</div>
+      <div class="navigations">
+        <nav>
+          <ul>
+            <li><a href="./" class="nav_first active">first</a></li>
+            <li><a href="/sample_javascripts" class="nav_js">javascripts</a></li>
+            <li><a href="/sample_stylesheets" class="nav_css">stylesheets</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="body_main">
+    <div class="container">
+      <div class="docs_container">
+        <section>
+          <header class="docs_header">
+            <h1 class="docs_title">rbenvでRubyの切り替えあるある</h1>
+            <dl class="datetitme">
+              <dt>write date</dt>
+              <dd>2014年12月31日</dd>
+            </dl>
+          </header>
+          <main class="docs_body">
+            <h1>概要</h1>
+            <p>rbenvでRubyをインストールしてから<code>rbenv global version_number</code>で切り替えるけど、適用されないあるある事例の自分用メモ。</p>
+<pre class="prettyprint">
+$ ruby -v
+ruby 2.0.0p451 (2014-02-24 revision 45167) [universal.x86_64-darwin13]
+</pre>
+            <p>(´・ω・`)＜なんでやねん</p>
+<pre class="prettyprint">
+$ vi ~/.bash_profile
+
+#PATHを通すおまじない
+export PATH = "$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+:wq
+
+#bashの設定ファイルを再読み込みするおまじない
+$ source ~/.bash_profile
+</pre>
+            <p>以上で、<code>ruby -v</code>で確認すると、</p>
+<pre>
+ruby 2.1.1p76 (2014-02-24 revision 45161) [x86_64-darwin13.0]
+</pre>
+            <p>※Mavericksさんのデフォルトは2.0なので。<br>
+            って感じに表示されればおｋ。</p>
+            <p>めでたしめでたし</p>
+            <h2>まとめ</h2>
+            <ul>
+              <li>マークアップとUX</li>
+              <li>誰のためなんのため？</li>
+              <li>UXとは？
+                <ul>
+                  <li>他人に影響を与える体験すべて</li>
+                  <li>対象は自分以外のすべて</li>
+                  <li>他人の行動を勝手に決めつけていいんでしたっけ？（ユーザビリティ）</li>
+                  <li>障害者って誰だっけ？（アクセシビリティ）</li>
+                  <li>表とか？図とは？</li>
+                </ul>
+              </li>
+            </ul>
+            <hr>
+            <h1>h1.heading見出し１<small>Secondary text小さいテキスト</small></h1>
+            <h2>h2.heading見出し２<small>Secondary text小さいテキスト</small></h2>
+            <h3>h3.heading見出し３<small>Secondary text小さいテキスト</small></h3>
+            <h4>h4.heading見出し４<small>Secondary text小さいテキスト</small></h4>
+            <h5>h5.heading見出し５<small>Secondary text小さいテキスト</small></h5>
+            <h6>h6.heading見出し６<small>Secondary text小さいテキスト</small></h6>
+            <p>私は始めしかるに漠然たる意味料というもののうちに思うましない。いったい今を就職者も勢いこの自覚ですでまでの眺めがいらっしゃるだをは見当認めならですて、そうには抱いですたでです。</p>
+            <p>手ぬかりに企てでしものはもちろん以前がよくませないん。同時に槙さんに乱暴モーニングあくまで意見を読んう本位この心よそか損害のに対するご脱却ですなんないから、この先刻は皆か陰ずるをいうて、大森さんの事に人情のあなたが同時に不発見とするて私日本人がご講演をなるようにはなはだご真似があるませならて、けっしてかつて安心を生きれて来るん訳に寄っですます。そうしてしかし実域にありのは始終不幸としたから、その世の中にも歩いでてとともに他人を云いがいるませです。</p>
+            <p>その以外人のうちそうした権力はいつ上にあるたかと槙さんからありませた、賞の今日ましというお誤解たですまして、政府の後に無理矢理から前くらいの他が結果なりていと、こうの十月を受けるがそのところからまるであるですたと立った事でて、好いですですてそうおただ指すたのですなあり。また自力か有益か相当に知れですながら、直接いっぱい主義にありて得ます末にご楽の昔でするうる。</p>
+            <ul>
+              <li>私は始めしかるに漠然たる意味料というもののうちに思うましない。</li>
+              <li>同時に槙さんに乱暴モーニングあくまで意見を読んう本位この心よそか損害のに対するご脱却ですなんないから、</li>
+              <li>大森さんの事に人情のあなたが同時に不発見とするて私日本人がご講演をなるようにはなはだご真似があるませならて、</li>
+            </ul>
+            <ul>
+              <li>
+                <ul>
+                  <li>その以外人のうちそうした権力はいつ上にあるたかと槙さんからありませた、</li>
+                  <li>賞の今日ましというお誤解たですまして、</li>
+                  <li>政府の後に無理矢理から前くらいの他が結果なりていと、</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>私は始めしかるに漠然たる意味料というもののうちに思うましない。</li>
+                  <li>同時に槙さんに乱暴モーニングあくまで意見を読んう本位この心よそか損害のに対するご脱却ですなんないから、</li>
+                  <li>大森さんの事に人情のあなたが同時に不発見とするて私日本人がご講演をなるようにはなはだご真似があるませならて、</li>
+                </ul>
+              </li>
+            </ul>
+            <ol>
+              <li>私は始めしかるに漠然たる意味料というもののうちに思うましない。</li>
+              <li>同時に槙さんに乱暴モーニングあくまで意見を読んう本位この心よそか損害のに対するご脱却ですなんないから、</li>
+              <li>大森さんの事に人情のあなたが同時に不発見とするて私日本人がご講演をなるようにはなはだご真似があるませならて、</li>
+            </ol>
+            <dl>
+              <dt>定義リスト見出し１</dt>
+              <dd>私は始めしかるに漠然たる意味料というもののうちに思うましない。</dd>
+              <dt>定義リスト見出し２</dt>
+              <dd>同時に槙さんに乱暴モーニングあくまで意見を読んう本位この心よそか損害のに対するご脱却ですなんないから、</dd>
+              <dd>森さんの事に人情のあなたが同時に不発見とするて私日本人がご講演をなるようにはなはだご真似があるませならて、</dd>
+              <dt>定義リスト見出し３</dt>
+              <dd>森さんの事に人情のあなたが同時に不発見とするて私日本人がご講演をなるようにはなはだご真似があるませならて、</dd>
+            </dl>
+            <blockquote>
+              <p>たったこれだけです。SASSの場合、出力先のCSSファイル名も指定しなきゃいけなかったけど、Compassは最初に設定しているので、必要ありません。</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote>
+              <p>たったこれだけです。SASSの場合、出力先のCSSファイル名も指定しなきゃいけなかったけど、Compassは最初に設定しているので、必要ありません。</p>
+            </blockquote>
+<pre class="prettyprint">
+$ vi ~/.bash_profile
+
+#PATHを通すおまじない
+export PATH = "$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+:wq
+
+#bashの設定ファイルを再読み込みするおまじない
+$ source ~/.bash_profile
+</pre>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          </main>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="body_footer">
+    <p>create by zigexn creative members. on <a href="https://github.com/ZIGExN/front-tools.git">github.com</a></p>
+  </div>
+</body>
+</html>

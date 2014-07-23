@@ -15,20 +15,21 @@ em{
   $colorGraysmoke: #737373;
   $colorGraywhite: #e0e0e0;
 $colorSmokeywhite: #f0f0f0;
-
+      $colorWhite: #ffffff;
 
 // layout
 .container{
      margin: 0 auto;
-  max-width: 980px;
   min-width: 320px;
+  max-width: 980px;
 }
-// header
 
+// header
 .body_header{
+    overflow: hidden;
+  margin-bottom: 1em;
   background: $colorBlack;
        color: $colorGraywhite;
-    overflow: hidden;
   a{
               color: $colorGraywhite;
     text-decoration: none;
@@ -37,8 +38,8 @@ $colorSmokeywhite: #f0f0f0;
         display: inline-block;
     margin-left: .5em;
     padding-top: .5em;
-      font-size: 2em;
     font-weight: bold;
+      font-size: 2em;
   }
   .navigations{
     @include inline-block;
@@ -68,6 +69,45 @@ $colorSmokeywhite: #f0f0f0;
   margin: 2em 0 3em;
 }
 
+// page_contents_list
+.page_contents_list{
+
+  .page_title{
+    margin-bottom: .6em;
+    border-bottom: 1px $colorSmokeywhite solid;
+  }
+  .nav_content_anchr{
+    @include box-sizing(border-box);
+    display: block;
+    padding: .6em 1em;
+    height:100%;
+    background: $colorGraywhite;
+    color: $colorBlack;
+    text-decoration: none;
+    transition: all linear .3s;
+    .docs_title{
+      display: block;
+      padding-bottom: .3em;
+      border-bottom: 1px $colorGraysmoke solid;
+      font-weight: bold;
+      font-size: 1.2857em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .written_date{
+      display: block;
+      padding-top: .3em;
+      color: $colorGraysmoke;
+      text-align: right;
+    }
+  }
+  .nav_content_anchr:hover{
+    background: $colorSmokeywhite;
+  }
+
+}
+
 // docs_container
 .docs_container{
   .docs_header{
@@ -85,8 +125,9 @@ $colorSmokeywhite: #f0f0f0;
     }
   }
   .docs_body pre{
-    border-radius: 6px;
+    padding: 1.6em;
     border: 1px $colorGraywhite solid;
+    border-radius: 6px;
   }
 }
 
